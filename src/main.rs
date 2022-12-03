@@ -3,6 +3,7 @@ use std::fs;
 
 mod day_one;
 mod day_two;
+mod day_three;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -13,6 +14,7 @@ fn main() {
     match riddle_number {
         1 => day_one::day_one(&file_contents),
         2 => day_two::day_two(&file_contents),
+        3 => day_three::day_three(&file_contents),
         _ => println!("Riddle not Implemented")
     }
 }
