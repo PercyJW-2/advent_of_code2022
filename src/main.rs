@@ -8,6 +8,7 @@ mod day_four;
 mod day_five;
 mod day_six;
 mod day_seven;
+mod day_eight;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -23,6 +24,7 @@ fn main() {
         5 => day_five::day_five(&file_contents),
         6 => day_six::day_six(&file_contents),
         7 => day_seven::day_seven(&file_contents),
+        8 => day_eight::day_eight(&file_contents),
         _ => println!("Riddle not Implemented")
     }
 }
